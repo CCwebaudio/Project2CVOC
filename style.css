@@ -8,6 +8,20 @@ h1 {
 h2 {
     text-transform: uppercase;
     font-size: 18px;
+    
+}
+
+.metier {
+    padding-bottom: 40px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.visage {
+    justify-content: center;
+    padding: 10px;
 }
 
 h3 {
@@ -23,13 +37,77 @@ h4 {
     background-color: #FFB547;
 }
 
-.perso {
-    background-color: grey;
-    justify-content: center;
+.rightpart {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+span {
     color: #FFB547;
 }
 
 
+.perso {
+    background-color: #2F4F4F;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    color: #FFB547;
+}
+
+.renseignements {
+    width: 97px;
+    padding: 20px;
+}
+
+.bio {
+    padding: 20px;
+    height: 900px;
+}
 
 
+.catego {
+    padding-right: 20px;
+    color: #FFB547;
+}
+
+.trait_dessus{
+    border-bottom: 1px solid #FFB547;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.loisirs {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.loisirs {
+    color: #2F4F4F;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #FFB547;;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
 
