@@ -22,7 +22,19 @@ img {
 
 .photo {
     justify-content: center;
+    align-content: center;
     padding: 10px;
+}
+
+.identite {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h3 {
@@ -64,13 +76,13 @@ span {
 
 
 li {
-    font-size: 0.8rem;
+    font-size: 1rem;
     list-style-type: none;
 }
 
 .bio {
     padding: 20px;
-    height: 730px;
+    height: 460px;
 }
 
 
@@ -89,11 +101,9 @@ li {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-}
-
-.loisirs {
     color: #2F4F4F;
 }
+
 
 .container {
     padding-right: 15px;
@@ -116,6 +126,21 @@ li {
   @media (min-width: 1200px) {
     .container {
       width: 1170px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .bio {
+        padding: 20px;
+        height: 250px;
+    }
+
+    .loisirs {
+        display: none;
+    }
+
+    .logoloisirs {
+        display: none;
     }
   }
 
