@@ -1,23 +1,53 @@
+                                        /* Paramètres généraux et communs aux deux parties */
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #FFB547;;
+}
+
+.descriptif {
+    text-align: justify;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+                                        /* Différents titres */
+
 h1 {
     text-transform: uppercase;
     font-size: 40px;
     padding-top: 50px;
 }
 
-
 h2 {
     text-transform: uppercase;
-    font-size: 18px;
-    width: auto;
-    
+    font-size: 16px;
+    font-weight: bold;
+    width: auto; 
 }
 
-.metier {
-    padding-bottom: 40px;
+h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-img {
-    border-radius: 50%;
+h4 {
+    font-size: 14px;
+}
+
+                                        /* partie gauche */ 
+
+.leftpart {
+    background-color: #FFB547;
 }
 
 .photo {
@@ -26,46 +56,19 @@ img {
     padding: 10px;
 }
 
-.identite {
-    display: flex;
-    flex-direction: column;
-}
-
 img {
+    border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
-h3 {
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-h4 {
-    font-size: 14px;
-}
-
-.leftpart {
-    background-color: #FFB547;
-}
-
-.rightpart {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-span {
-    color: #FFB547;
-}
-
 
 .perso {
     background-color: #2F4F4F;
     text-align: center;
     color: #FFB547;
     margin-left: -16px;
-    margin-right: -16px;
+    margin-right: -15px;
 }
 
 .perso h2 {
@@ -73,28 +76,18 @@ span {
     padding-bottom: 10px;
 }
 
-
-
 li {
-    font-size: 1rem;
+    font-size: 0.85rem;
     list-style-type: none;
+}
+
+.renseignement {
+    padding-top: 10px;
 }
 
 .bio {
     padding: 20px;
-    height: 460px;
-}
-
-
-.catego {
-    padding-right: 20px;
-    color: #FFB547;
-}
-
-.trait_dessus{
-    border-bottom: 1px solid #FFB547;
-    width: 500px;
-    margin-bottom: 10px;
+    height: 500px;
 }
 
 .loisirs {
@@ -104,35 +97,63 @@ li {
     color: #2F4F4F;
 }
 
+                                        /* Partie droite */
 
-.container {
+.rightpart {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+
+span {
+    color: #FFB547;
+}
+
+.metier {
+    padding-bottom: 40px;
+    text-transform: none;
+}
+
+.catego {
     padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid #FFB547;;
-  }
+    color: #FFB547;
+}
 
-  @media (min-width: 768px) {
+.trait_dessus{
+    border-bottom: 1px solid #FFB547;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+                                        /* Responsive design */
+
+@media (min-width: 768px) {
     .container {
       width: 750px;
     }
-  }
-  @media (min-width: 992px) {
+}
+
+@media (min-width: 992px) {
     .container {
       width: 970px;
     }
-  }
-  @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
     .container {
       width: 1170px;
     }
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .bio {
         padding: 20px;
-        height: 250px;
+        height: 280px;
     }
 
     .loisirs {
@@ -142,5 +163,5 @@ li {
     .logoloisirs {
         display: none;
     }
-  }
+}
 
