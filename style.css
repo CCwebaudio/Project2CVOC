@@ -10,6 +10,9 @@
 
 .descriptif {
     text-align: justify;
+    font-size: 14px;
+    font-weight: 490;
+    line-height: normal;    
 }
 
                                         /* Différents titres */
@@ -22,19 +25,21 @@ h1 {
 
 h2 {
     text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 19px;
+    font-weight: 600;
     width: auto; 
 }
 
 h3 {
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 h4 {
     font-size: 14px;
+    font-weight: 490;
+
 }
 
                                         /* partie gauche */ 
@@ -51,6 +56,7 @@ h4 {
 
 img {
     border-radius: 50%;
+    border:4px solid #FF8C00;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -71,6 +77,8 @@ img {
 
 li {
     list-style-type: none;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .renseignement {
@@ -79,7 +87,7 @@ li {
 
 .bio {
     padding: 20px;
-    height: 500px;
+    height: 550px;
 }
 
 .loisirs {
@@ -107,13 +115,25 @@ span {
 }
 
 .metier {
-    padding-bottom: 40px;
     text-transform: none;
+    position: relative;
+    color: #2F4F4F;
+}
+
+.metier:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    padding-top: 12px;
+    height: 1px;
+    width: 80px;
+    border-bottom: 2px solid #FFB547;
 }
 
 .catego {
-    padding-right: 15px;
     color: #FFB547;
+    padding-right: 30px;
 }
 
 .date_place {
@@ -126,6 +146,7 @@ span {
 
 .icone_liste {
     padding-top: 4px;
+    color: #FFB547;
 }
 
 .fa-circle {
@@ -136,8 +157,24 @@ span {
 .trait_dessus{
     border-bottom: 1px solid #FFB547;
     width: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
+
+.partie_generale{
+    color: #2F4F4F;
+    padding-top: 10px;
+}
+
+.section_title{
+    color: black;
+    font-size: 20px;
+    font-weight: 645;
+}
+
+.recommandations {
+    padding-left: 0;
+}
+
 
                                         /* Responsive design */
 
@@ -145,18 +182,34 @@ span {
     .container {
       width: 750px;
     }
+
+    .bio {
+        padding: 20px;
+        height: 700px;
+    }
 }
 
 @media (min-width: 992px) {
     .container {
       width: 970px;
     }
+
+    .bio {
+        padding: 20px;
+        height: 900px;
+    }
 }
 
 @media (min-width: 1200px) {
     .container {
-      width: 1170px;
+      width: 800px;
     }
+
+    .bio {
+        padding: 20px;
+        height: 550px;
+    }
+
 }
 
 @media (max-width: 768px) {
