@@ -12,13 +12,6 @@
     text-align: justify;
 }
 
-footer {
-    padding: 10px;
-    text-align: center;
-}
-
-
-
                                         /* Différents titres */
 
 h1 {
@@ -77,7 +70,6 @@ img {
 }
 
 li {
-    font-size: 0.85rem;
     list-style-type: none;
 }
 
@@ -122,6 +114,23 @@ span {
 .catego {
     padding-right: 15px;
     color: #FFB547;
+}
+
+.date_place {
+    display: flex;
+}
+
+.bordure_liste {
+    padding-left: 15px;
+}
+
+.icone_liste {
+    padding-top: 4px;
+}
+
+.fa-circle {
+    font-size: 9px;
+    padding-top: 6px;
 }
 
 .trait_dessus{
