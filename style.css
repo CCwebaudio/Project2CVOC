@@ -219,6 +219,10 @@ span {
         height: 280px;
     }
 
+    .perso {
+        margin-right: -16px;
+    }
+
     .loisirs {
         display: none;
     }
