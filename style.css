@@ -133,7 +133,7 @@ span {
 
 .catego {
     color: #FFB547;
-    padding-right: 30px;
+    margin-right: 30px;
     font-size: 1.5rem;
 }
 
@@ -219,5 +219,11 @@ span {
     }
     .perso {
         margin-right: -16px;
+    }
+}
+
+@media (max-width: 380px) {
+    .catego {
+        margin-right: 20px;  
     }
 }
